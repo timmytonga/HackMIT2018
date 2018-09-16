@@ -1,0 +1,36 @@
+h1{
+	color:blue;
+	letter-spacing:0.06em;
+	text-align:center;
+}
+
+body{
+	background-color:#f4f4f4;
+	color:#555555;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:1.5em;
+	margin:0;
+}
+
+.main-button{
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	background-color:  #008CBA;
+	padding: 14px 40px;
+	float:right;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+.container p{
+	color:#006600;
+	font-weight:2.2em;
+}
+
+.user-area{
+	width:90%;
+}

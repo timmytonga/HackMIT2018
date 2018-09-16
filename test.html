@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Jot  Thought </title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+
+
+
+
+<body>
+	<div class="container">
+		 <h1> Jot Thought </h1>
+		<p> Transcribe your thoughts, lectures, or notes...</p>
+
+	</div>
+	
+	<div class="user-area">
+		<!-- <audio id="player" controls></audio> -->
+		<button class="main-button" onclick="record()">Record</button>
+		<script> 
+		  var player = document.getElementById('player');
+
+  var handleSuccess = function(stream) {
+    if (window.URL) {
+      player.src = window.URL.createObjectURL(stream);
+    } else {
+      player.src = stream;
+    }
+  };
+
+
+			function record(){
+				  navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+      .then(handleSuccess);
+			}
+		</script>
+	</div>
+	
+</body>
+
+</html>
